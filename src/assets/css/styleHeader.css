@@ -1,0 +1,24 @@
+.cart-content{
+    width: 375px;
+    height: 100vh;
+    background-color: rgb(234, 234, 243);
+    
+}
+#cart{
+    display: none;
+    
+}
+.transform{
+    animation-duration: 1s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+@keyframes slidein {
+    from {
+      margin-right: -375px;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }

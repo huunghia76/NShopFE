@@ -1,0 +1,17 @@
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap');
+*{
+    font-family: 'Mitr', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.a{
+    text-decoration: none;
+}
+.bg-pink{
+    background-color: rgb(246, 183, 214);
+}

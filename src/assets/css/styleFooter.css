@@ -1,0 +1,14 @@
+.input-ft{
+    padding: 5px 0px;
+    margin-right: 6px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+     margin-top: 8px;
+}
+ul{
+    padding-left: 10px !important;  
+}

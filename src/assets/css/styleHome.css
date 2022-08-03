@@ -1,0 +1,34 @@
+.choose-cl-1, .choose-cl-2, .choose-cl-3{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+.choose-cl-1 i, .choose-cl-2 i, .choose-cl-3 i{
+    display: none;
+}
+.choose-cl-1{
+    color: rgb(255, 255, 255);
+    background-color: brown;
+}
+.choose-cl-1:hover i{
+    display: block;
+}
+.choose-cl-2{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+.choose-cl-2:hover i{
+    display: block;
+}
+.choose-cl-3{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+.choose-cl-3:hover i{
+    display: block;
+}
+.products img{
+    width: 100%;
+    height: 100% ;
+}
