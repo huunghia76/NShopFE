@@ -1,32 +1,22 @@
-.choose-cl-1, .choose-cl-2, .choose-cl-3{
+.choose-color{
     width: 20px;
     height: 20px;
-    border: 1px solid black;
     margin-right: 5px;
 }
-.choose-cl-1 i, .choose-cl-2 i, .choose-cl-3 i{
-    display: none;
+.fa-check{
+    opacity: 0;
 }
-.choose-cl-1{
+.choose-color{
     color: rgb(255, 255, 255);
     background-color: brown;
 }
-.choose-cl-1:hover i{
+.choose-color:hover i{
     display: block;
+    opacity: 1;
 }
-.choose-cl-2{
-    color: rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
-}
-.choose-cl-2:hover i{
-    display: block;
-}
-.choose-cl-3{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-}
-.choose-cl-3:hover i{
-    display: block;
+.active-color{
+    border: 3px solid black;
+    
 }
 .products img{
     width: 100%;

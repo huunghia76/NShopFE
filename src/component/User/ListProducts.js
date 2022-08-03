@@ -1,6 +1,24 @@
 
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 function ListProducts(){
+    let colors = ['red', 'blue', 'gray'];
+
+    const [colorState, setColor] = useState('red');
+
+    const setActiveColor = (color) => {
+        setColor( color);
+    }
+
+    const elmColor = colors.map((color, index) => {
+        return  <div  key={index} 
+                      className= {colorState === color ? 'choose-color active-color' : 'choose-color'} 
+                      style={{backgroundColor:color}}
+                      onClick={() => setActiveColor(color)}
+                      >
+                    <i  className="fa-solid fa-check "   ></i>
+                </div>
+    });
     return (<>
     <div className="container my-5 products px-0">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 ">
@@ -28,15 +46,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+              {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -69,15 +79,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+            {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -110,15 +112,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+            {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -151,15 +145,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+            {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -195,15 +181,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+            {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -236,15 +214,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+            {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -277,15 +247,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+              {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
@@ -318,15 +280,7 @@ function ListProducts(){
               </p>
             </strong>
             <div className="position-absolute bottom-0 start-0 text-center d-flex ms-2 p-2 bg-white">
-              <div className="choose-cl-1">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-2">
-                <i className="fa-solid fa-check"></i>
-              </div>
-              <div className="choose-cl-3">
-                <i className="fa-solid fa-check"></i>
-              </div>
+            {elmColor}
             </div>
             <div className="d-flex justify-content-between mt-3 px-2">
               <p>Product name</p>
