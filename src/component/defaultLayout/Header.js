@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../../assets/css/style.css"
-import "../../assets/css/styleHeader.css"
+import "../../assets/css/styleHeader.css";
+import { Input, StyledLink } from "../form/Input";
 import {
   handleClickCloseCart,handleClickOpenCart
 } from './handle.js';
@@ -61,7 +62,7 @@ function Header() {
                     type="search"
                     placeholder="Search"
                     aria-label="Search"
-                  />
+                  /> 
                   <button className="btn btn-outline-success" type="submit">
                     Search
                   </button>

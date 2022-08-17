@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "../../assets/css/styleFooter.css";
 
 function Footer() {
@@ -16,6 +17,9 @@ setInterval(function () {//lặp lại
       document.getElementById('content').style.display = "block";
     }
 }, 200)
+useEffect(()=>{
+  
+})
   return (
     <>
       <div className="container-fluid border border-end-0 border-start-0 pt-5 bg-light">
@@ -89,6 +93,7 @@ setInterval(function () {//lặp lại
               <span>
                 <i className="fa-brands fs-3 pe-3 mt-3 fa-tiktok"></i>
               </span>
+              
             </div>
           </div>
         </div>
