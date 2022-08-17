@@ -2,7 +2,6 @@
   "name": "clothes-nshop",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://huunghia76.github.io/NShopFE/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
@@ -26,6 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "homepage": "https://huunghia76.github.io/NShopFE/",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"

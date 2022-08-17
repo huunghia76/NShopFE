@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import "../../assets/css/style.css"
 import "../../assets/css/styleHeader.css";
-import { Input, StyledLink } from "../form/Input";
 import {
   handleClickCloseCart,handleClickOpenCart
 } from './handle.js';

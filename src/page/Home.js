@@ -115,7 +115,7 @@ const Home = () => {
             <div className="position-absolute top-0 mt-5 pt-5 ms-5">
               <h2 className="">
 							Home Clothes <br/>And Accessories</h2>
-              <a to="#" className="text-white">Read more</a>
+              <Link to="#" className="text-white">Read more</Link>
             </div>
           </div>
           <div className=" position-relative">
@@ -127,7 +127,7 @@ const Home = () => {
              <div className="position-absolute top-0 mt-5 pt-5 ms-5">
               <h2 className="">
 							The Best Women Fashion <br/>Outfits For Date 						</h2>
-              <a to="#" className="text-white">Read more</a>
+              <Link to="#" className="text-white">Read more</Link>
             </div>
           </div>
         </div>

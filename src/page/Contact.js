@@ -1,6 +1,5 @@
 import Footer from "../component/defaultLayout/Footer";
 import Header from "../component/defaultLayout/Header";
-import ReactSvg from '../assets/image/payment.svg';
 function Contact(){
     return(<>
     <Header/>
